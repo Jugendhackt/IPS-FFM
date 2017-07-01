@@ -1,6 +1,5 @@
 import subprocess
 import time
-import math
 
 class Wifi():
     def __init__(self):
@@ -21,15 +20,3 @@ class Wifi():
 def printcon(text):
     o = open("/dev/console","w")
     o.write(text + "\n")
-
-def distance(rssi):
-   diff = -rssi - 40
-   num = diff/6
-    
-   return math.pow(2, num)
-
-w = Wifi()
-
-while 1:
-    w.get_rssi_list()
-    time.sleep(1)
