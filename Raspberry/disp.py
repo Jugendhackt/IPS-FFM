@@ -1,25 +1,6 @@
 import pygame
 import time
 
-"""
-class Person(pygame.sprite.Sprite):
-
-    # Constructor. Pass in the color of the block,
-    # and its x and y position
-    def __init__(self, color, width, height):
-       # Call the parent class (Sprite) constructor
-       pygame.sprite.Sprite.__init__(self)
-
-       # Create an image of the block, and fill it with a color.
-       # This could also be an image loaded from the disk.
-       self.image = pygame.Surface([width, height])
-       self.image.blit(pygame.image.load("twitterlogo.png")
-
-       # Fetch the rectangle object that has the dimensions of the image
-       # Update the position of this object by setting the values of rect.x and rect.y
-       self.rect = self.image.get_rect()
-"""
-
 class Map():
     def __init__(self):
         self.screen_size = (800,480)
@@ -37,6 +18,10 @@ class Map():
         #Überschrift
         self.screen.fill(self.bgcolor)
         self.screen.blit(pygame.font.SysFont('Comic Sans MS', 50).render('Indoor Positioning System', False, (230, 126, 34)),(190,5))
+
+        #Legende
+        self.screen.blit(pygame.image.load('little_twitterlogo.png'),(100,430))
+        self.screen.blit(pygame.font.SysFont('Comic Sans MS', 30).render(' = deine Position', False, (230, 126, 34)),(130,430))
 
         pygame.draw.rect(self.screen, self.squarecolor, ((self.screen_size[0]/2-(self.squaresize/2)), (self.screen_size[1]/2-(self.squaresize/2)),self.squaresize,self.squaresize),7)
         pygame.display.update()
