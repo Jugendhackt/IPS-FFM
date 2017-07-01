@@ -22,10 +22,9 @@ def printcon(text):
     o.write(text + "\n")
 
 def distance(rssi):
-    startStrength = -25
-    dBmMeter = 13
-    return((-rssi+startStrength)/dBmMeter)
+   meter = (math.log(((-rssi-48.66)/-8.66), math.e)/-0.69)+1
 
+   return meter
 
 w = Wifi()
 
