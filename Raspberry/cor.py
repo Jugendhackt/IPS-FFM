@@ -61,6 +61,7 @@ def getlocation(xA,yA,zA,xB,yB,zB,xC,yC,zC):
     return [x, y]
 
 def distance(rssi):
+   print(rssi)
    diff = -rssi - 40
    num = diff/6
    return math.pow(2, num)
