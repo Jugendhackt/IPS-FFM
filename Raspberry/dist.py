@@ -1,4 +1,4 @@
 def distance(rssi):
-    startStrength = -25
-    dBmMeter = 13
+    startStrength = -9
+    dBmMeter = 31
     return((-rssi+startStrength)/dBmMeter)
