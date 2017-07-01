@@ -51,12 +51,3 @@ class Map():
 
         self.screen.blit( pygame.image.load('little_twitterlogo.png'), (new_x,new_y))
         pygame.display.update()
-
-map = Map()
-map.init_screen()
-time.sleep(2)
-map.setObj(6, 6)
-time.sleep(2)
-map.setObj(50,30)
-while 1:
-    pass
