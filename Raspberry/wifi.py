@@ -1,5 +1,6 @@
 import subprocess
 import time
+import math
 
 class Wifi():
     def __init__(self):
@@ -22,9 +23,10 @@ def printcon(text):
     o.write(text + "\n")
 
 def distance(rssi):
-   meter = (math.log(((-rssi-48.66)/-8.66), math.e)/-0.69)+1
-
-   return meter
+   diff = -rssi - 40
+   num = diff/6
+    
+   return math.pow(2, num)
 
 w = Wifi()
 
