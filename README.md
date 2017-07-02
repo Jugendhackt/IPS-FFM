@@ -16,32 +16,25 @@ oder beim Messen, um zu einem gesuchten Stand zu kommen.
  ### Installation
 IPS benötigt um lauffähig zu sein zwei Python-Libraries: PyGames und NumPy.
 
-Diese müssen über:
+Diese müssen mit pip3 zuerst installiert werden:
 ```
 sudo pip3 install numpy pygames
 ```
-installiert werden.
 
-Falls pip3 noch nicht auf dem System installiert ist muss dieses mit 
+Falls pip3 noch nicht auf dem System installiert ist muss dieses zuerst 
 ```
 sudo apt-get install python3-pip
 ``` 
-noch installiert werden.
-
-
 Nachdem die Installation der Python-Libraries abgeschlossen ist muss als nächstes die aktuelle Version mit
 ```
 git clone https://github.com/Jugendhackt/IPS-FFM.git
 ```
-heruntergeladen werden. Falls git noch nicht installiert ist, muss dieses mit 
+
+Falls git noch nicht installiert ist, muss dieses zuerst installiert werden:
 ```
 sudo apt-get install git
 ``` 
-zuerst installiert werden.
-
-
-Nach herunterladen der aktuellen Version, kann das Programm mit 
+Nach herunterladen der aktuellen Version, kann das Programm mit folgendem Befehl gestartet werden:
 ```
 sudo screen -d python3 IPS-FFM/Raspberry/disp.py
 ```
-gestartet werden.
