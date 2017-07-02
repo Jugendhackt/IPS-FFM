@@ -3,7 +3,7 @@ IPS(Indoor Positioning System) ist ein System, mit dem man sich in geschlossenen
 Man kann es zum Beispiel an Bahnhöfen verwenden, um schnell zum richtigen Gleis zu kommen,
 oder bei Messen, um zu einem gesuchten Stand zu kommen.
 
-## Hardware
+### Hardware
 1. Raspberry Pi
    1. Ladekabel
    2. SD-Karte
@@ -13,4 +13,4 @@ oder bei Messen, um zu einem gesuchten Stand zu kommen.
 2. 3 ESP8266
    1. Hülle mit Verlinkung
    
- ## Installation
+ ### Installation
