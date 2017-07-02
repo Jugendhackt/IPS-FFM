@@ -25,6 +25,8 @@ Falls pip3 noch nicht auf dem System installiert ist muss dieses zuerst
 ```
 sudo apt-get install python3-pip
 ``` 
+<br />
+
 Nachdem die Installation der Python-Libraries abgeschlossen ist muss als nächstes die aktuelle Version mit
 ```
 git clone https://github.com/Jugendhackt/IPS-FFM.git
@@ -34,6 +36,8 @@ Falls git noch nicht installiert ist, muss dieses zuerst installiert werden:
 ```
 sudo apt-get install git
 ``` 
+
+<br />
 Nach herunterladen der aktuellen Version, kann das Programm mit folgendem Befehl gestartet werden:
 ```
 sudo screen -d python3 IPS-FFM/Raspberry/disp.py
