@@ -20,26 +20,18 @@ Diese müssen mit pip3 zuerst installiert werden:
 ```
 sudo pip3 install numpy pygames
 ```
-
-Falls pip3 noch nicht auf dem System installiert ist muss dieses zuerst 
-```
-sudo apt-get install python3-pip
-``` 
+falls pip3 nocht nicht installiert ist, hilft ``` sudo apt-get install python3-pip ``` weiter.
+ 
 <br />
 
-Nachdem die Installation der Python-Libraries abgeschlossen ist muss als nächstes die aktuelle Version mit
-```
-git clone https://github.com/Jugendhackt/IPS-FFM.git
-```
 
-Falls git noch nicht installiert ist, muss dieses zuerst installiert werden:
-```
-sudo apt-get install git
-``` 
+Zu guter letzt fehlt noch der der Code, welcher mit ``` git clone https://github.com/Jugendhackt/IPS-FFM.git ``` herunter geladen werden kann.
 
 <br />
-Nach herunterladen der aktuellen Version, kann das Programm mit folgendem Befehl gestartet werden:
+Nach Herunterladen der aktuellen Version, kann das Setup mit folgendem Befehl gestartet werden und danach direkt das Programm:
 
 ```
-sudo screen -d python3 IPS-FFM/Raspberry/disp.py
+nano wifi.py && sudo screen -d python3 IPS-FFM/Raspberry/disp.py
 ```
+
+In der Wifi.py ist standardmäßig in Zeile 8 die Netzwerkkarte "wlan0" eingetragen. Damit die Berechnungen funktionieren, muss das Siganllevel mit der Einheit "dBm" übergeben werden. Um zu überprüfen ob deine Netzwerkkarte mit unserem Code funktioniert, scanne einmal mit ``` iwlist [interface] scan``` alle Netzwerke und schaue ob das 'Signal level' in "dBm" angeben wird. Solltest du was wie "44/100" finden, funktioniert es leider nicht :(
