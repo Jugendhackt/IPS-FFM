@@ -14,25 +14,20 @@ oder beim Messen, um zu einem gesuchten Stand zu kommen.
    1. Hülle mit Verlinkung
    
  ### Installation
-IPS benötigt um lauffähig zu sein zwei Python-Libraries: PyGames und NumPy. Wenn es sich bei der Plattform auf der IPS ausgeführt werden soll um einen Raspberry Pi handelt fällt die erste Installation weg, da PyGames auf diesem standardmäßig schon nstalliert ist.
+IPS benötigt um lauffähig zu sein zwei Python-Libraries: PyGames und NumPy.
 
-Ansonsten wird dies über
+Diese müssen über:
 ```
-sudo pip3 install pygames
+sudo pip3 install numpy pygames
 ```
-installiert.
-
-Anschließend wird NumPy über den Befehl
-```
-sudo pip3 install numpy
-```
-installiert
+installiert werden.
 
 Falls pip3 noch nicht auf dem System installiert ist muss dieses mit 
 ```
 sudo apt-get install python3-pip
 ``` 
-zuerst installiert werden.
+noch installiert werden.
+
 
 Nachdem die Installation der Python-Libraries abgeschlossen ist muss als nächstes die aktuelle Version mit
 ```
@@ -44,7 +39,8 @@ sudo apt-get install git
 ``` 
 zuerst installiert werden.
 
-Nachdem die aktuelle Version heruntergeladen wurde, kann das Programm mit 
+
+Nach herunterladen der aktuellen Version, kann das Programm mit 
 ```
 sudo screen -d python3 IPS-FFM/Raspberry/disp.py
 ```
