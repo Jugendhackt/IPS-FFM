@@ -60,7 +60,12 @@ def getlocation(xA,yA,zA,xB,yB,zB,xC,yC,zC):
     print ("y=",y)
     return [x, y]
 
+# def distance(rssi):
+#    diff = -rssi - 40
+#    num = diff/6
+#    return (math.pow(2, num))/2
+
 def distance(rssi):
-   diff = -rssi - 40
-   num = diff/6
-   return math.pow(2, num)
+    startStrength = -25
+    dBmMeter = 13
+    return((-rssi+startStrength)/dBmMeter)
